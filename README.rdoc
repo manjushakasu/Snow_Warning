@@ -1,0 +1,14 @@
+Snow Warning: 
+Basic prediction model for snow/ice fall from roofs.  
+
+Pre requisits to run this program:    
+Raspberry Pi, BreadBoard, Resistor, Led, Eclipse kepler with remote system explorer plugin.
+
+Raspberry Pi should have Pi4j library, Apache server.
+
+Compile and Run:
+javac -classpath .:classes:/opt/pi4j/lib/'*' -d . YrTimerModel.java
+sudo java -classpath .:classes:/opt/pi4j/lib/'*' YrTimerModel > /var/www/index.html
+
+View Result:
+In a web browser type "http://10.42.0.30/"
