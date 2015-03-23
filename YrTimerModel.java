@@ -76,7 +76,7 @@ public class YrTimerModel {
 			}
 			else if((snow_p == 0)& ((valuep>=0.5)||(valuep<0.5))){
 				snow_p = 0;	
-				ledPin.high();  
+				ledPin.low();  
 		        Thread.sleep(5000);
 			}
 			break;
